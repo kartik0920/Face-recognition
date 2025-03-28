@@ -20,6 +20,7 @@ while True:
     # Convert BGR (OpenCV format) to RGB (face_recognition format)
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
+
     # Detect faces in the frame
     face_locations = face_recognition.face_locations(rgb_frame)
     face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
